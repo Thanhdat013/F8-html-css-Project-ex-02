@@ -36,14 +36,21 @@ body {
   color: #ffffff;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 /* Header */
+.header {
+  background: #fffcf4;
+}
 
 .header_nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 36px;
-  padding: 17px 0;
+
+  padding: 53px 0 17px 0;
 }
 
 .header_nav ul {
@@ -127,28 +134,6 @@ body {
   left: 0;
 }
 
-.hero_info {
-  margin: 64px 0 128px 0;
-}
-
-.hero_info--title {
-  font-family: "Sen", sans-serif;
-  width: 470px;
-  font-weight: 700;
-  font-size: 5.8rem;
-  line-height: 1.17;
-  letter-spacing: -0.02em;
-  color: var(--primary-color);
-}
-
-.hero_info--desc {
-  margin-top: 22px;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 1.67;
-  color: #5f5b53;
-}
-
 /* Introduce */
 .hero_wrap--introduce {
   display: flex;
@@ -197,6 +182,73 @@ body {
 }
 
 .introduce_qty--value--desc {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: var(--primary-color);
+}
+
+/* Hero-info */
+.hero_info {
+  margin: 64px 0 128px 0;
+}
+
+.hero_info--title {
+  font-family: "Sen", sans-serif;
+  width: 470px;
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--primary-color);
+}
+
+.hero_info--desc {
+  margin-top: 22px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+
+.hero_info--subcri {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.hero_info--subcri--btn {
+  margin-right: 28px;
+  width: 180px;
+  height: 64px;
+}
+
+.hero_info--subcri--link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 23px 0;
+}
+
+.hero_info--subcri--watch,
+.subcri_watch--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subcri_watch--icon {
+  margin-right: 14px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+}
+
+.subcri_watch--desc {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.67;
