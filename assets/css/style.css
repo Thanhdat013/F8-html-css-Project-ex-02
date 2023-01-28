@@ -43,7 +43,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 36px;
-  /* background-color: red; */
   padding: 17px 0;
 }
 
@@ -109,14 +108,13 @@ body {
 
 /* Hero */
 .hero {
-  padding: 65px 0;
+  padding: 64px 0;
   display: flex;
 }
 
 .hero-wrap {
   margin-right: 130px;
   min-width: 49%;
-  background-color: red;
   position: relative;
 }
 
@@ -125,19 +123,8 @@ body {
   width: 470px;
   height: 685px;
   object-fit: cover;
+  border-radius: 20px;
   left: 0;
-}
-
-.hero_wrap--introduce {
-  display: block;
-  width: 270px;
-  height: 244px;
-  position: absolute;
-  right: 0;
-  bottom: 48px;
-  background: #ffffff;
-  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
 }
 
 .hero_info {
@@ -163,11 +150,30 @@ body {
 }
 
 /* Introduce */
+.hero_wrap--introduce {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 244px;
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.hero_wrap--introduce--card {
+  margin: 24px 0 24px 24px;
+}
+
 .introduce_qty {
+  padding-bottom: 14px;
   display: flex;
 }
 
 .introduce_qty--image {
+  margin-right: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,4 +184,21 @@ body {
 }
 
 .introduce_qty--image-icon {
+}
+
+.introduce_qty--value {
+}
+
+.introduce_qty--value--course {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+
+.introduce_qty--value--desc {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: var(--primary-color);
 }
