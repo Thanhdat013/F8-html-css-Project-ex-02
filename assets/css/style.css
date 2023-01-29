@@ -45,6 +45,10 @@ body {
   cursor: pointer;
 }
 
+.icon-active {
+  background: #ffb900 !important;
+}
+
 /* Header */
 .header {
   /* background: #fffcf4; */
@@ -636,4 +640,136 @@ body {
   height: 440px;
   border-radius: 20px;
   object-fit: cover;
+}
+
+/* ================Blog============= */
+.blog {
+  margin-top: 200px;
+  background: #fffcf4;
+}
+
+.blog_info {
+  text-align: center;
+  padding-top: 96px;
+}
+
+.blog_info--title {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #130606;
+}
+
+.blog_info--desc {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  text-align: center;
+  color: #696262;
+}
+
+.blog_wrap {
+  display: flex;
+  margin-top: 55px;
+}
+
+.blog_wrap--box {
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.blog_wrap--box + .blog_wrap--box {
+  margin-left: 30px;
+}
+
+.blog_wrap--image {
+  width: 370px;
+  height: 250px;
+  border-radius: 16px 16px 0px 0px;
+  object-fit: cover;
+}
+
+.blog_wrap--box--info {
+  margin: 20px 20px 28px;
+}
+
+.blog_wrap--time {
+  margin: 20px 0 25px;
+  display: flex;
+  align-items: center;
+}
+
+.blog_wrap--time--icon {
+  display: block;
+  background: #ffb900;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.blog_wrap--time--date {
+  position: relative;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--tetx-color);
+}
+
+.blog_wrap--time--date::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 12px;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: #e2dfda;
+  border-radius: 0.5px;
+}
+
+.blog_wrap--title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: var(--primary-color);
+}
+
+.blog_wrap--btn {
+  margin-top: 12px;
+  padding: 18px 0;
+}
+
+.blog_wrap--btn--name {
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.blog_wrap--scroll {
+  margin-top: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog_wrap--scroll--icon {
+  margin-bottom: 96px;
+  display: block;
+  background: #5f5b53;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.blog_wrap--scroll--icon:hover {
+  cursor: pointer;
+}
+
+.blog_wrap--scroll--icon + .blog_wrap--scroll--icon {
+  margin-left: 6px;
 }
