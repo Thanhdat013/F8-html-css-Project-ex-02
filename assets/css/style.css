@@ -586,3 +586,54 @@ body {
   color: #ffffff;
   padding: 17px 0;
 }
+
+/* =============== CTA =============== */
+.cta {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta_intro {
+  margin: 71px 130px 71px 0;
+}
+
+.cta_intro--title {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.26;
+  letter-spacing: -0.02em;
+  color: var(--primary-color);
+}
+
+.cta_intro--desc {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: var(--tetx-color);
+}
+
+.cta_intro--btn {
+  margin-top: 32px;
+}
+
+.cta_intro--btn--box {
+  min-width: 137px;
+  padding: 17px 0;
+}
+
+.cta_intro--btn--desc {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cta_wrap--image {
+  width: 470px;
+  height: 440px;
+  border-radius: 20px;
+  object-fit: cover;
+}
