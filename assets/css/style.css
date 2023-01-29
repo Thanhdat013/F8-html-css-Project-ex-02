@@ -42,7 +42,8 @@ body {
 
 /* Header */
 .header {
-  background: #fffcf4;
+  /* background: #fffcf4; */
+  background: #5f5b53;
 }
 
 .header_nav {
@@ -168,12 +169,6 @@ body {
   border-radius: 50%;
 }
 
-.introduce_qty--image-icon {
-}
-
-.introduce_qty--value {
-}
-
 .introduce_qty--value--course {
   font-weight: 400;
   font-size: 1.4rem;
@@ -211,20 +206,20 @@ body {
   color: #5f5b53;
 }
 
-.hero_info--subcri {
+.hero_info--subscri {
   display: flex;
   align-items: center;
   margin-top: 38px;
 }
 
-.hero_info--subcri--btn {
+.hero_info--subscri--btn {
   margin-right: 28px;
   width: 180px;
   height: 64px;
   background: #ffb900;
 }
 
-.hero_info--subcri--link {
+.hero_info--subscri--link {
   display: inline-block;
   font-weight: 600;
   font-size: 1.8rem;
@@ -233,14 +228,14 @@ body {
   padding: 23px 0;
 }
 
-.hero_info--subcri--watch,
-.subcri_watch--icon {
+.hero_info--subscri--watch,
+.subscri_watch--icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.subcri_watch--icon {
+.subscri_watch--icon {
   margin-right: 14px;
   width: 40px;
   height: 40px;
@@ -249,7 +244,7 @@ body {
   border-radius: 50%;
 }
 
-.subcri_watch--desc {
+.subscri_watch--desc {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.67;
@@ -299,4 +294,67 @@ body {
   font-size: 1.8rem;
   line-height: 1.67;
   color: #5f5b53;
+}
+
+/* Courses */
+
+.courses {
+  background-color: #82d1db;
+  margin-top: 200px;
+}
+
+.courses_intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courses_intro--title--sub {
+  font-family: "sen", sans-serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.26;
+  letter-spacing: -0.02em;
+  color: var(--primary-color);
+}
+
+.courses_intro--title--desc {
+  margin-top: 16px;
+  width: 458px;
+  max-width: 100%;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+
+.course_intro--title-navi,
+.course_intro--title--cir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course_intro--title--cir {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffb900;
+  border-radius: 50%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.course_intro--title--cir + .course_intro--title--cir {
+  margin-left: 18px;
+}
+
+.courses_intro--icon--left {
+  transform: rotate(180deg);
+}
+
+.courses_intro--icon--active {
+  background: #ffb900;
+}
+
+.courses_intro--icon--right {
+  transform: rotate(180deg);
 }
