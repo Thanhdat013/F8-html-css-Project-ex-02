@@ -50,15 +50,18 @@ body {
 }
 
 /* Header */
-.header {
-  background: #fffcf4;
-}
 
 .header_nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 36px 0 17px;
+  background: #fffcf4;
+}
+
+.header_nav .content {
+  display: flex;
+  align-items: center;
 }
 
 .header_fixed {
@@ -106,6 +109,7 @@ body {
 }
 
 .header_nav--navigation {
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -140,7 +144,12 @@ body {
   padding: 18px 10px;
 }
 
-/* Hero */
+/* ==================Hero ====================*/
+.header_hero {
+  width: 100%;
+  background: #fffcf4;
+}
+
 .hero {
   padding: 64px 0;
   display: flex;
