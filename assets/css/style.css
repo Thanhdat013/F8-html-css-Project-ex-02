@@ -773,3 +773,123 @@ body {
 .blog_wrap--scroll--icon + .blog_wrap--scroll--icon {
   margin-left: 6px;
 }
+
+/* Footer */
+.footer {
+  background: #2e2100;
+}
+
+.footer .content {
+  display: flex;
+  padding-top: 96px;
+}
+
+.footer_wrap {
+  margin-right: 145px;
+}
+
+.footer_wrap--heading {
+  align-items: baseline;
+  display: flex;
+}
+
+.footer_wrap--heading--dot {
+  display: inline-block;
+  background: #ffb900;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.footer_wrap--heading--title {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+
+.footer_wrap--desc {
+  width: 267px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+
+.footer_wrap--social {
+  margin-top: 18px;
+}
+
+.footer_wrap--social--icon {
+  display: inline-block;
+  color: #fff;
+}
+
+.footer_wrap--social a {
+  text-decoration: none;
+}
+
+.footer_wrap--social a + a {
+  margin-left: 18px;
+}
+
+.footer_column {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.footer_column--heading--title {
+  margin-bottom: 43px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  position: relative;
+  color: #ffffff;
+}
+
+.footer_column--heading--title::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  margin-top: 14px;
+  background: #59554b;
+}
+
+.footer_column--heading--item strong {
+  color: #fff;
+}
+
+.footer_column--heading--item a {
+  text-decoration: none;
+}
+.footer_column--heading--item a,
+.footer_column--heading--item {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #bfbcb2;
+}
+
+.footer_column--heading--item + .footer_column--heading--item {
+  margin-top: 12px;
+}
+
+.footer_copyright--desc {
+  padding: 67px 0 28px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #807d74;
+}
+
+.footer_copyright--desc::before {
+  content: "";
+  display: block;
+  transform: translateY(-28px);
+  margin: auto;
+  width: 1170px;
+  height: 1px;
+  background: #59554b;
+}
