@@ -51,8 +51,7 @@ body {
 
 /* Header */
 .header {
-  /* background: #fffcf4; */
-  background: var(--text-color);
+  background: #fffcf4;
 }
 
 .header_nav {
@@ -70,10 +69,23 @@ body {
 }
 
 .header_nav--logo {
+  display: flex;
+  align-items: baseline;
+}
+
+.header_nav--logo--title {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 1.42;
   color: var(--primary-color);
+}
+
+.header_nav--logo--dot {
+  display: inline-block;
+  background: #ffb900;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
 }
 
 .header_nav a {
