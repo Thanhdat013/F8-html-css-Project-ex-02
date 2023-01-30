@@ -8,7 +8,7 @@ html {
 
 :root {
   --primary-color: #171100;
-  --tetx-color: #5f5b53;
+  --text-color: #5f5b53;
 }
 
 body {
@@ -58,8 +58,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 36px 0 17px;
+}
 
-  padding: 53px 0 17px 0;
+.header_fixed {
+  position: sticky;
+  top: -28px;
+  z-index: 1;
 }
 
 .header_nav ul {
@@ -628,7 +633,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.75;
-  color: var(--tetx-color);
+  color: var(--text-color);
 }
 
 .cta_intro--btn {
@@ -728,7 +733,7 @@ body {
   position: relative;
   font-weight: 400;
   font-size: 1.4rem;
-  color: var(--tetx-color);
+  color: var(--text-color);
 }
 
 .blog_wrap--time--date::after {
