@@ -43,6 +43,7 @@ body {
 
 .btn:hover {
   cursor: pointer;
+  opacity: 0.9;
 }
 
 .icon-active {
@@ -151,8 +152,8 @@ body {
 }
 
 .hero {
-  padding: 64px 0;
   display: flex;
+  padding: 128px 0;
 }
 
 .hero-wrap {
@@ -162,23 +163,20 @@ body {
 }
 
 .hero_wrap--image {
-  display: inline-block;
   width: 470px;
   height: 685px;
   object-fit: cover;
   border-radius: 20px;
-  left: 0;
 }
 
 /* Introduce */
 .hero_wrap--introduce {
   display: flex;
   flex-direction: column;
-  width: 270px;
-  height: 244px;
   position: absolute;
+  width: 270px;
   right: 0;
-  bottom: 113px;
+  bottom: 48px;
   background: #ffffff;
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
@@ -189,8 +187,12 @@ body {
 }
 
 .introduce_qty {
-  padding-bottom: 14px;
   display: flex;
+  align-items: center;
+}
+
+.introduce_qty + .introduce_qty {
+  margin-top: 22px;
 }
 
 .introduce_qty--image {
@@ -202,6 +204,14 @@ body {
   height: 48px;
   background: #fff9e8;
   border-radius: 50%;
+}
+
+.introduce_qty:nth-child(2) .introduce_qty--image {
+  background: #fcefff;
+}
+
+.introduce_qty:nth-child(3) .introduce_qty--image {
+  background: #fcefff;
 }
 
 .introduce_qty--value--course {
@@ -220,7 +230,7 @@ body {
 
 /* Hero-info */
 .hero_info {
-  margin: 64px 0 128px 0;
+  width: 51%;
 }
 
 .hero_info--title {
@@ -270,6 +280,15 @@ body {
   justify-content: center;
 }
 
+.hero_info--subscri--watch,
+.subscri_watch--icon {
+  cursor: pointer;
+}
+
+.hero_info--subscri--watch:hover {
+  opacity: 0.6;
+}
+
 .subscri_watch--icon {
   margin-right: 14px;
   width: 40px;
@@ -277,6 +296,7 @@ body {
   background: #ffffff;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
   border-radius: 50%;
+  border: none;
 }
 
 .subscri_watch--desc {
@@ -291,7 +311,6 @@ body {
 }
 
 .hero_info--qty--title {
-  margin-left: 48px;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.67;
@@ -301,10 +320,6 @@ body {
 .hero_info--qty--lable,
 .hero_info--qty--statistic {
   display: flex;
-}
-
-.hero_info--qty--lable {
-  margin-left: 8px;
 }
 
 .hero_info--qty--statistic {
