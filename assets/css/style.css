@@ -392,18 +392,18 @@ body {
   border: 1px solid #ffb900;
   border-radius: 50%;
   transform: matrix(-1, 0, 0, 1, 0, 0);
+  color: #ffb900;
+  cursor: pointer;
+}
+
+.course_intro--title--cir:hover {
+  color: #fff;
+  background: #ffb900;
+  opacity: 0.9;
 }
 
 .course_intro--title--cir + .course_intro--title--cir {
   margin-left: 18px;
-}
-
-.courses_intro--icon--left {
-  transform: rotate(180deg);
-}
-
-.courses_intro--icon--right {
-  transform: rotate(180deg);
 }
 
 /* Course_items */
