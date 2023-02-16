@@ -54,6 +54,21 @@ a {
   background: #ffb900 !important;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.word-break-all {
+  word-break: break-all;
+}
+
 /* Header */
 
 .header_nav {
@@ -427,17 +442,16 @@ a {
   box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
 }
 
+.course_list--wrap {
+  margin: 0 22px 22px 22px;
+}
+
 .courses_list--image {
   width: calc(100% + 2px);
   height: 278px;
   margin: -1px;
   border-radius: 12px 12px 0px 0px;
   object-fit: cover;
-}
-.courses_list--title,
-.courses_list--desc,
-.courses_list--label {
-  margin-left: 22px;
 }
 
 .courses_list--title {
@@ -459,7 +473,6 @@ a {
 }
 
 .courses_list--title--desc {
-  margin: 0 22px 0 6px;
   font-weight: 400;
   font-size: 1.6rem;
   color: #fea31b;
@@ -475,7 +488,6 @@ a {
 
 .courses_list--label {
   margin-top: 12px;
-  margin-bottom: 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -495,7 +507,7 @@ a {
 }
 
 /*================Testimonia================*/
-.testimonial {
+.testimonial_list {
   margin-top: 200px;
   display: flex;
   justify-content: space-between;
@@ -567,8 +579,9 @@ a {
 
 /* =========== Features ================ */
 
-.features {
-  margin-top: 200px;
+.features .content {
+  margin-top: 135px;
+  padding: 65px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -594,7 +607,10 @@ a {
 }
 
 .features_intro {
-  margin: 58px 0 58px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 41%;
 }
 
 .features_intro--title {
@@ -636,14 +652,17 @@ a {
 }
 
 /* =============== CTA =============== */
-.cta {
+.cta .content {
   margin-top: 200px;
   display: flex;
   justify-content: space-between;
 }
 
 .cta_intro {
-  margin: 71px 130px 71px 0;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cta_intro--title {
